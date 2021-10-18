@@ -1,0 +1,274 @@
+/**
+  @tokens Colors
+  @presenter Color
+*/
+
+:root {
+  --token-color-gray-50: #fafafa;
+  --token-color-gray-100: #f5f5f5;
+  --token-color-gray-200: #efefef;
+  --token-color-gray-300: #e2e2e2;
+  --token-color-gray-400: #bfbfbf;
+  --token-color-gray-500: #a0a0a0;
+  --token-color-gray-600: #777777;
+  --token-color-gray-700: #636363;
+  --token-color-gray-800: #444444;
+  --token-color-gray-900: #212121;
+  --token-color-gray-default: #bfbfbf;
+  --token-color-primary-50: #f9eae8;
+  --token-color-primary-100: #fccfc0;
+  --token-color-primary-200: #fbb098;
+  --token-color-primary-300: #fa916f;
+  --token-color-primary-400: #f97a4f;
+  --token-color-primary-500: #ff681d;
+  --token-color-primary-600: #ee5e2f;
+  --token-color-primary-700: #e0582a;
+  --token-color-primary-800: #d25127;
+  --token-color-primary-900: #b84621;
+  --token-color-primary-default: #ff681d;
+  --token-color-primary-inverse: #ffffff;
+  --token-color-secondary-50: #e6e9f4;
+  --token-color-secondary-100: #bfc7e4;
+  --token-color-secondary-200: #96a3d2;
+  --token-color-secondary-300: #6c7fc0;
+  --token-color-secondary-400: #4a64b4;
+  --token-color-secondary-500: #0047ba;
+  --token-color-secondary-600: #1c429e;
+  --token-color-secondary-700: #0f3993;
+  --token-color-secondary-800: #002f87;
+  --token-color-secondary-900: #001e72;
+  --token-color-secondary-default: #0047ba;
+  --token-color-secondary-inverse: #ffffff;
+  --token-color-tertiary-50: #e2f5f8;
+  --token-color-tertiary-100: #b5e5ed;
+  --token-color-tertiary-200: #87d3e2;
+  --token-color-tertiary-300: #5fc2d8;
+  --token-color-tertiary-400: #45b5d3;
+  --token-color-tertiary-500: #2ea8cf;
+  --token-color-tertiary-600: #259bc2;
+  --token-color-tertiary-700: #1988b0;
+  --token-color-tertiary-800: #17779d;
+  --token-color-tertiary-900: #0b587c;
+  --token-color-tertiary-default: #259bc2;
+  --token-color-tertiary-inverse: #ffffff;
+  --token-color-quaternary-50: #000000;
+  --token-color-quaternary-100: #000000;
+  --token-color-quaternary-200: #000000;
+  --token-color-quaternary-300: #000000;
+  --token-color-quaternary-400: #000000;
+  --token-color-quaternary-500: #000000;
+  --token-color-quaternary-600: #000000;
+  --token-color-quaternary-700: #000000;
+  --token-color-quaternary-800: #000000;
+  --token-color-quaternary-900: #000000;
+  --token-color-quaternary-default: #000000;
+  --token-color-quaternary-inverse: #ffffff;
+  --token-color-quinary-50: #000000;
+  --token-color-quinary-100: #000000;
+  --token-color-quinary-200: #000000;
+  --token-color-quinary-300: #000000;
+  --token-color-quinary-400: #000000;
+  --token-color-quinary-500: #000000;
+  --token-color-quinary-600: #000000;
+  --token-color-quinary-700: #000000;
+  --token-color-quinary-800: #000000;
+  --token-color-quinary-900: #000000;
+  --token-color-quinary-default: #000000;
+  --token-color-quinary-inverse: #ffffff;
+  --token-color-critical-50: #ffeaee;
+  --token-color-critical-100: #ffcbd0;
+  --token-color-critical-200: #f69696;
+  --token-color-critical-300: #ee6c6d;
+  --token-color-critical-400: #f84648;
+  --token-color-critical-500: #fd302a;
+  --token-color-critical-600: #ef222a;
+  --token-color-critical-700: #dd1224;
+  --token-color-critical-800: #d0011b;
+  --token-color-critical-900: #cd000d;
+  --token-color-critical-default: #fd302a;
+  --token-color-critical-inverse: #ffffff;
+  --token-color-caution-50: #fffbeb;
+  --token-color-caution-100: #fef3c7;
+  --token-color-caution-200: #fde68a;
+  --token-color-caution-300: #fcd34d;
+  --token-color-caution-400: #fbbf24;
+  --token-color-caution-500: #f59e0b;
+  --token-color-caution-600: #d97706;
+  --token-color-caution-700: #b45309;
+  --token-color-caution-800: #92400e;
+  --token-color-caution-900: #78350f;
+  --token-color-caution-default: #f59e0b;
+  --token-color-caution-inverse: #000000;
+  --token-color-positive-50: #f0fdf4;
+  --token-color-positive-100: #dcfce7;
+  --token-color-positive-200: #bbf7d0;
+  --token-color-positive-300: #86efac;
+  --token-color-positive-400: #4ade80;
+  --token-color-positive-500: #22c55e;
+  --token-color-positive-600: #16a34a;
+  --token-color-positive-700: #15803d;
+  --token-color-positive-800: #166534;
+  --token-color-positive-900: #14532d;
+  --token-color-positive-default: #22c55e;
+  --token-color-positive-inverse: #ffffff;
+  --token-color-neutral-50: #f9fafb;
+  --token-color-neutral-100: #f3f4f6;
+  --token-color-neutral-200: #e5e7eb;
+  --token-color-neutral-300: #d1d5db;
+  --token-color-neutral-400: #9ca3af;
+  --token-color-neutral-500: #6b7280;
+  --token-color-neutral-600: #4b5563;
+  --token-color-neutral-700: #374151;
+  --token-color-neutral-800: #1f2937;
+  --token-color-neutral-900: #111827;
+  --token-color-neutral-default: #6b7280;
+  --token-color-neutral-inverse: #ffffff;
+  --token-color-info-50: #e4f1fa;
+  --token-color-info-100: #bdddf4;
+  --token-color-info-200: #95c8ee;
+  --token-color-info-300: #6fb2e6;
+  --token-color-info-400: #54a2e2;
+  --token-color-info-500: #3f93dd;
+  --token-color-info-600: #3885d0;
+  --token-color-info-700: #3074bd;
+  --token-color-info-800: #2963ab;
+  --token-color-info-900: #1e468c;
+  --token-color-info-default: #3f93dd;
+  --token-color-info-inverse: #ffffff;
+  --token-color-promote-50: #efe6f4;
+  --token-color-promote-100: #d8c1e6;
+  --token-color-promote-200: #c098d6;
+  --token-color-promote-300: #a772c4;
+  --token-color-promote-400: #9556b7;
+  --token-color-promote-500: #843faa;
+  --token-color-promote-600: #773ba3;
+  --token-color-promote-700: #653599;
+  --token-color-promote-800: #55308f;
+  --token-color-promote-900: #37267f;
+  --token-color-promote-default: #843faa;
+  --token-color-promote-inverse: #ffffff;
+  --token-color-global-white: #ffffff;
+  --token-color-global-gray-50: #f9fafb;
+  --token-color-global-gray-100: #f3f4f6;
+  --token-color-global-gray-200: #e5e7eb;
+  --token-color-global-gray-300: #d1d5db;
+  --token-color-global-gray-400: #9ca3af;
+  --token-color-global-gray-500: #6b7280;
+  --token-color-global-gray-600: #4b5563;
+  --token-color-global-gray-700: #374151;
+  --token-color-global-gray-800: #1f2937;
+  --token-color-global-gray-900: #111827;
+  --token-color-global-black: #000000;
+}
+
+/**
+  @tokens Shadows
+  @presenter Shadow
+*/
+
+:root {
+  --token-shadow-small: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  --token-shadow-medium: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  --token-shadow-large: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  --token-shadow-xlarge: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  --token-shadow-xxlarge: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+/**
+  @tokens Spacing
+  @presenter Spacing
+*/
+
+:root {
+  --token-space-gutter: 6;
+  --token-space-xxsmall: 1;
+  --token-space-xsmall: 2;
+  --token-space-small: 3;
+  --token-space-medium: 5;
+  --token-space-large: 8;
+  --token-space-xlarge: 12;
+  --token-space-xxlarge: 24;
+}
+
+:root {
+  --token-content-width-xsmall: 400px;
+  --token-content-width-small: 660px;
+  --token-content-width-medium: 940px;
+  --token-content-width-large: 1280px;
+}
+
+:root {
+  --token-breakpoint-xs: 376px;
+  --token-breakpoint-sm: 640px;
+  --token-breakpoint-md: 768px;
+  --token-breakpoint-lg: 1024px;
+  --token-breakpoint-xl: 1280px;
+  --token-breakpoint-2-xl: 1536px;
+  --token-breakpoint-3-xl: 2048px;
+}
+
+:root {
+  --token-typography-font-family-title: Poppins, ui-sans-serif, system-ui,
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  --token-typography-font-family-copy: Poppins, ui-sans-serif, system-ui,
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  --token-typography-font-weight-weak: 200;
+  --token-typography-font-weight-regular: 400;
+  --token-typography-font-weight-medium: 600;
+  --token-typography-font-weight-strong: 700;
+  --token-typography-font-size-xs-default: 0.75rempx;
+  --token-typography-font-size-xs-line-height: 1rempx;
+  --token-typography-font-size-sm-default: 0.875rempx;
+  --token-typography-font-size-sm-line-height: 1.25rempx;
+  --token-typography-font-size-base-default: 1rempx;
+  --token-typography-font-size-base-line-height: 1.5rempx;
+  --token-typography-font-size-lg-default: 1.125rempx;
+  --token-typography-font-size-lg-line-height: 1.75rempx;
+  --token-typography-font-size-xl-default: 1.25rempx;
+  --token-typography-font-size-xl-line-height: 1.75rempx;
+  --token-typography-font-size-2-xl-default: 1.5rempx;
+  --token-typography-font-size-2-xl-line-height: 2rempx;
+  --token-typography-font-size-3-xl-default: 1.875rempx;
+  --token-typography-font-size-3-xl-line-height: 2.25rempx;
+  --token-typography-font-size-4-xl-default: 2.25rempx;
+  --token-typography-font-size-4-xl-line-height: 2.5rempx;
+  --token-typography-font-size-5-xl-default: 3rempx;
+  --token-typography-font-size-5-xl-line-height: 1px;
+  --token-typography-font-size-6-xl-default: 3.75rempx;
+  --token-typography-font-size-6-xl-line-height: 1px;
+  --token-typography-font-size-7-xl-default: 4.5rempx;
+  --token-typography-font-size-7-xl-line-height: 1px;
+  --token-typography-font-size-8-xl-default: 6rempx;
+  --token-typography-font-size-8-xl-line-height: 1px;
+  --token-typography-font-size-9-xl-default: 8rempx;
+  --token-typography-font-size-9-xl-line-height: 1px;
+}
+
+:root {
+  --token-transition-fast: transform 0.125s ease, opacity 0.125s ease;
+  --token-transition-touchable: transform 0.2s
+    cubic-bezier(0.02, 1.505, 0.745, 1.235);
+}
+
+:root {
+  --token-layout-grid: 4;
+  --token-layout-touchable: 11;
+}
+
+:root {
+  --token-border-radius-standard: 4px;
+  --token-border-width-standard: 1px;
+  --token-border-width-large: 2px;
+}

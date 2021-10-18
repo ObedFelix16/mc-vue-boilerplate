@@ -1,0 +1,317 @@
+#app {
+  .cv-wrapper {
+    background-color: var(--theme-background-calendar);
+  }
+  .cv-day-number {
+    font-weight: var(--global-font-weight-medium);
+  }
+
+  .cv-day.outsideOfMonth .cv-day-number {
+    opacity: 0.4;
+  }
+
+  .cv-day.today .cv-day-number {
+    color: var(--theme-color-primary);
+  }
+
+  .cv-header,
+  .cv-day,
+  .cv-event,
+  .cv-header-day,
+  .cv-header-days,
+  .cv-week,
+  .cv-weeks {
+    border-color: var(--theme-border-color-calendar);
+  }
+
+  .cv-header .periodLabel {
+    font-size: 1.5em;
+    justify-content: center;
+  }
+
+  .cv-header-day {
+    padding: 1em;
+    text-transform: uppercase;
+  }
+
+  /* Grid */
+
+  .cv-day.today {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 100%;
+      background-color: var(--theme-color-primary);
+    }
+  }
+
+  .cv-day.past {
+    background-color: rgba(0, 0, 0, 0.025);
+  }
+
+  .cv-day.outsideOfMonth {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  /* Events */
+
+  .cv-event {
+    border-radius: 4px;
+    color: #28a745;
+    background-color: #dff2e3;
+    text-overflow: ellipsis;
+    text-align: center;
+    cursor: pointer;
+    border-left: 4px solid currentColor;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:nth-child(2n) {
+      color: #9182d7;
+      background-color: #edeaff;
+    }
+
+    &:nth-child(3n) {
+      color: #5cc1c8;
+      background-color: #d9f9f5;
+    }
+    &:nth-child(4n) {
+      color: #007bff;
+      background-color: #d9ebff;
+    }
+  }
+
+  .cv-event.continued::before,
+  .cv-event.toBeContinued::after {
+    content: ' \21e2 ';
+    color: #999;
+  }
+
+  .cv-event.toBeContinued {
+    border-right-style: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .cv-event.hasUrl:hover {
+    text-decoration: underline;
+  }
+
+  .cv-event.continued {
+    border-left-style: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  /* Event Times */
+
+  .cv-event .startTime,
+  .cv-event .endTime {
+    font-weight: bold;
+    color: #666;
+  }
+
+  /* Drag and drop */
+
+  .cv-day.draghover {
+    box-shadow: inset 0 0 0.2em 0.2em yellow;
+  }
+}
+
+// /*
+// **************************************************************
+//   LIGHT THEME
+// **************************************************************
+// */
+
+// /* Header */
+
+// [data-theme='light'] .cv-header,
+// [data-theme='light'] .cv-header-day {
+//   background-color: #f0f0f0;
+// }
+
+// [data-theme='light'] .cv-header .periodLabel {
+//   font-size: 1.5em;
+// }
+
+// [data-theme='light'] .cv-header button {
+//   color: #7f7f7f;
+// }
+
+// [data-theme='light'] .cv-header button:disabled {
+//   color: #ccc;
+//   background-color: #f7f7f7;
+// }
+
+// /* Grid */
+
+// [data-theme='light'] .cv-day.today {
+//   background-color: #ffe;
+// }
+
+// [data-theme='light'] .cv-day.past {
+//   background-color: #fafafa;
+// }
+
+// [data-theme='light'] .cv-day.outsideOfMonth {
+//   background-color: #f7f7f7;
+// }
+
+// /* Events */
+
+// [data-theme='light'] .cv-event {
+//   border-color: #e0e0f0;
+//   border-radius: 0.5em;
+//   background-color: #e7e7ff;
+//   text-overflow: ellipsis;
+//   text-align: center;
+// }
+
+// [data-theme='light'] .cv-event.purple {
+//   background-color: #f0e0ff;
+//   border-color: #e7d7f7;
+// }
+
+// [data-theme='light'] .cv-event.orange {
+//   background-color: #ffe7d0;
+//   border-color: #f7e0c7;
+// }
+
+// [data-theme='light'] .cv-event.continued::before,
+// [data-theme='light'] .cv-event.toBeContinued::after {
+//   content: ' \21e2 ';
+//   color: #999;
+// }
+
+// [data-theme='light'] .cv-event.toBeContinued {
+//   border-right-style: none;
+//   border-top-right-radius: 0;
+//   border-bottom-right-radius: 0;
+// }
+
+// [data-theme='light'] .cv-event.hasUrl:hover {
+//   text-decoration: underline;
+// }
+
+// [data-theme='light'] .cv-event.continued {
+//   border-left-style: none;
+//   border-top-left-radius: 0;
+//   border-bottom-left-radius: 0;
+// }
+
+// /* Event Times */
+
+// [data-theme='light'] .cv-event .startTime,
+// [data-theme='light'] .cv-event .endTime {
+//   font-weight: bold;
+//   color: #666;
+// }
+
+// /* Drag and drop */
+
+// [data-theme='light'] .cv-day.draghover {
+//   box-shadow: inset 0 0 0.2em 0.2em yellow;
+// }
+
+// /*
+// **************************************************************
+//   DARK THEME
+// **************************************************************
+// */
+
+// /* Header */
+
+// [data-theme='dark'] .cv-header,
+// [data-theme='dark'] .cv-header-day {
+//   background-color: #555;
+// }
+
+// [data-theme='dark'] .cv-header .periodLabel {
+//   font-size: 1.5em;
+// }
+
+// [data-theme='dark'] .cv-header button {
+//   color: #7f7f7f;
+// }
+
+// [data-theme='dark'] .cv-header button:disabled {
+//   color: #ccc;
+//   background-color: #f7f7f7;
+// }
+
+// /* Grid */
+
+// [data-theme='dark'] .cv-day.today {
+//   background-color: #ffe;
+// }
+
+// [data-theme='dark'] .cv-day.past {
+//   background-color: #fafafa;
+// }
+
+// [data-theme='dark'] .cv-day.outsideOfMonth {
+//   background-color: #f7f7f7;
+// }
+
+// /* Events */
+
+// [data-theme='dark'] .cv-event {
+//   border-color: #e0e0f0;
+//   border-radius: 0.5em;
+//   background-color: #e7e7ff;
+//   text-overflow: ellipsis;
+// }
+
+// [data-theme='dark'] .cv-event.purple {
+//   background-color: #f0e0ff;
+//   border-color: #e7d7f7;
+// }
+
+// [data-theme='dark'] .cv-event.orange {
+//   background-color: #ffe7d0;
+//   border-color: #f7e0c7;
+// }
+
+// [data-theme='dark'] .cv-event.continued::before,
+// [data-theme='dark'] .cv-event.toBeContinued::after {
+//   content: ' \21e2 ';
+//   color: #999;
+// }
+
+// [data-theme='dark'] .cv-event.toBeContinued {
+//   border-right-style: none;
+//   border-top-right-radius: 0;
+//   border-bottom-right-radius: 0;
+// }
+
+// [data-theme='dark'] .cv-event.hasUrl:hover {
+//   text-decoration: underline;
+// }
+
+// [data-theme='dark'] .cv-event.continued {
+//   border-left-style: none;
+//   border-top-left-radius: 0;
+//   border-bottom-left-radius: 0;
+// }
+
+// /* Event Times */
+
+// [data-theme='dark'] .cv-event .startTime,
+// [data-theme='dark'] .cv-event .endTime {
+//   font-weight: bold;
+//   color: #666;
+// }
+
+// /* Drag and drop */
+
+// [data-theme='dark'] .cv-day.draghover {
+//   box-shadow: inset 0 0 0.2em 0.2em yellow;
+// }

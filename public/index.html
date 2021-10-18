@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="bg-white">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title><%= webpackConfig.name %></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="keywords"
+      content="San Carlos, houses, lots, condos, rentals, sale"
+    />
+    <meta name="author" content="Mr. Código - Software Development Agency" />
+    <meta name="color-scheme" content="light" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1NNJ9N46KC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-1NNJ9N46KC')
+    </script>
+  </head>
+  <body class="font-normal font-copy text-gray-900">
+    <div class="print:hidden">
+      <div id="fb-root"></div>
+    </div>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: 'v10.0',
+        })
+      }
+      ;(function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0]
+        if (d.getElementById(id)) return
+        js = d.createElement(s)
+        js.id = id
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js'
+        fjs.parentNode.insertBefore(js, fjs)
+      })(document, 'script', 'facebook-jssdk')
+    </script>
+
+    <div
+      class="fb-customerchat"
+      attribution="biz_inbox"
+      page_id="1894318807287301"
+    ></div>
+    <noscript>
+      <strong>
+        We're sorry but <%= webpackConfig.name %> doesn't work properly without
+        JavaScript enabled. Please enable it to continue.
+      </strong>
+    </noscript>
+
+    <div id="app"></div>
+  </body>
+</html>

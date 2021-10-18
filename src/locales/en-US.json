@@ -1,0 +1,94 @@
+{
+  "id": "ID",
+  "all": "All",
+  "active": "Active",
+  "inactive": "Inactive",
+  "language": "Language",
+  "optional": "Optional",
+  "readonly": "Readonly",
+  "paginationOptions": {
+    "all": "All",
+    "next": "Next",
+    "previous": "Previous",
+    "page": "Page",
+    "of": "Of",
+    "rowsSelected": "Rows selected",
+    "rowsPerPage": "Rows per page",
+    "clear": "Clear"
+  },
+  "share": "Share",
+  "print": "Print",
+  "contactFields": {
+    "firstName": {
+      "label": "First Name",
+      "placeholder": "First Name"
+    },
+    "lastName": {
+      "label": "Last Name",
+      "placeholder": "Last Name"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Email"
+    },
+    "phone": {
+      "label": "Phone",
+      "placeholder": "Phone"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Message"
+    }
+  },
+  "routes": {
+    "home": "Home",
+    "forbidden": "Forbidden",
+    "errorNotFound": "Not Found"
+  },
+  "loginForm": {
+    "signIn": "Continue",
+    "signInLoading": "Logging in...",
+    "username": {
+      "label": "Username"
+    },
+    "password": {
+      "label": "Password"
+    },
+    "rememberMe": {
+      "label": "Remember me"
+    }
+  },
+  "close": "Close",
+  "submit": "Submit",
+  "send": "Send",
+  "previous": "Previous",
+  "next": "Next",
+  "multiselect": {
+    "placeholder": "Select an option",
+    "asyncPlaceholder": "Type to search",
+    "tagPlaceholder": "Press enter to create a tag",
+    "selectLabel": "Press enter to select",
+    "selectedLabel": "Selected",
+    "deselectLabel": "Press enter to remove",
+    "noResult": "No elements found. Consider changing the search query.",
+    "noOptions": "List is empty.",
+    "asyncNoOptions": "Waiting for you to type."
+  },
+  "success": "Success",
+  "info": "Info",
+  "warning": "Warning",
+  "error": "Error",
+  "loading": "Loading",
+  "remove": "Remove",
+  "create": "Create",
+  "edit": "Edit",
+  "view": "View",
+  "actions": "Actions",
+  "countries": {
+    "unitedStates": "United States",
+    "canada": "Canada",
+    "mexico": "Mexico"
+  },
+  "contactSendSuccess": "We received your message, we will get in touch as soon as possible.",
+  "contactSendError": "An error occurred while sending your message, please try again."
+}

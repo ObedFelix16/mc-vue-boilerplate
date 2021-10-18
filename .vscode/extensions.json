@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "johnsoncodehk.volar",
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "csstools.postcss",
+    "vscode-icons-team.vscode-icons",
+    "mrmlnc.vscode-scss",
+    "editorconfig.editorconfig"
+  ]
+}

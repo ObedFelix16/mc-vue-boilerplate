@@ -1,0 +1,50 @@
+{
+  "title": "Tralosa",
+  "description": "description for tralosa",
+  "website": "",
+  "address": "",
+  "geolocation": {
+    "latitude": "",
+    "longitude": ""
+  },
+  "phone": "",
+  "email": "",
+  "socials": {
+    "facebook": "",
+    "instagram": ""
+  },
+  "author": "Mr. Código - Software Development Agency",
+  "router": {
+    "baseUrl": "/"
+  },
+  "api": {
+    "applicationId": "",
+    "base": {
+      "url": "https://api.mrcodigo.com/api"
+    },
+    "security": {
+      "url": "https://security.mrcodigo.com/api"
+    },
+    "contact": {
+      "url": "https://contactoapi.mrcodigo.com/api"
+    }
+  },
+  "google": {
+    "maps": {
+      "test": {
+        "apiKey": ""
+      },
+      "production": {
+        "apiKey": ""
+      }
+    }
+  },
+  "facebook": {
+    "appId": "",
+    "appSecret": "",
+    "pageId": ""
+  },
+  "localStorage": {
+    "namespace": ""
+  }
+}

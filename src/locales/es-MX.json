@@ -1,0 +1,94 @@
+{
+  "id": "ID",
+  "all": "Todo",
+  "active": "Activo",
+  "inactive": "Inactivo",
+  "language": "Lenguaje",
+  "optional": "Opcional",
+  "readonly": "Solo lectura",
+  "paginationOptions": {
+    "all": "Todos",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "page": "Página",
+    "of": "De",
+    "rowsSelected": "Filas seleccionadas",
+    "rowsPerPage": "Filas por página",
+    "clear": "Limpiar"
+  },
+  "share": "Compartir",
+  "print": "Imprimir",
+  "contactFields": {
+    "firstName": {
+      "label": "Nombre",
+      "placeholder": "Nombre"
+    },
+    "lastName": {
+      "label": "Apellidos",
+      "placeholder": "Apellidos"
+    },
+    "email": {
+      "label": "Correo electrónico",
+      "placeholder": "Correo electrónico"
+    },
+    "phone": {
+      "label": "Teléfono",
+      "placeholder": "Teléfono"
+    },
+    "message": {
+      "label": "Mensaje",
+      "placeholder": "Mensaje"
+    }
+  },
+  "close": "Cerrar",
+  "submit": "Enviar",
+  "send": "Enviar",
+  "previous": "Anterior",
+  "next": "Siguiente",
+  "routes": {
+    "home": "Inicio",
+    "forbidden": "Prohibido",
+    "errorNotFound": "No Encontrado"
+  },
+  "loginForm": {
+    "signIn": "Continuar",
+    "signInLoading": "Iniciando sesión...",
+    "username": {
+      "label": "Usuario"
+    },
+    "password": {
+      "label": "Contraseña"
+    },
+    "rememberMe": {
+      "label": "Permanecer conectado"
+    }
+  },
+  "multiselect": {
+    "placeholder": "Seleccione una opción",
+    "asyncPlaceholder": "Escriba para buscar",
+    "tagPlaceholder": "Presione enter para crear una etiqueta",
+    "selectLabel": "Presione enter para seleccionar",
+    "selectedLabel": "Seleccionado",
+    "deselectLabel": "Presione enter para remover",
+    "noResult": "No se encontraron elementos. Considere cambiar la consulta de búsqueda.",
+    "noOptions": "Lista vacía.",
+    "asyncNoOptions": "Esperando a que escriba."
+  },
+  "success": "Éxito",
+  "info": "Info",
+  "warning": "Advertencia",
+  "error": "Error",
+  "loading": "Cargando",
+  "remove": "Remover",
+  "create": "Crear",
+  "edit": "Editar",
+  "view": "Ver",
+  "actions": "Acciones",
+  "countries": {
+    "unitedStates": "Estados Unidos",
+    "canada": "Canadá",
+    "mexico": "México"
+  },
+  "contactSendSuccess": "Recibimos su mensaje, nos pondremos en contacto lo antes posible.",
+  "contactSendError": "Ocurrió un error al enviar su mensaje, por favor intente de nuevo."
+}

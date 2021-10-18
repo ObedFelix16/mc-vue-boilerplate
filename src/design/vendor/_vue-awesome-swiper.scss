@@ -1,0 +1,9 @@
+#app {
+  .swiper-pagination-bullet {
+    @apply shadow-lg;
+  }
+
+  .swiper-pagination-bullet-active {
+    @apply bg-white;
+  }
+}

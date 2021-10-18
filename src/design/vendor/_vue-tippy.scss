@@ -1,0 +1,77 @@
+.tippy {
+  $bg-color-dark: #293134;
+  $color-dark: #ffffff;
+
+  $bg-color-light: #ffffff;
+  $color-light: #293134;
+
+  &-tooltip {
+    &.dark-theme {
+      background-color: $bg-color-dark;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      border-radius: 4px;
+      box-shadow: var(--shadow-standard);
+
+      .tippy-content {
+        color: $color-dark;
+      }
+
+      .tippy-backdrop {
+        background-color: $bg-color-dark;
+      }
+    }
+
+    &.light-theme {
+      background-color: $bg-color-light;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      border-radius: 4px;
+      box-shadow: var(--shadow-standard);
+
+      .tippy-content {
+        color: $color-light;
+      }
+
+      .tippy-backdrop {
+        background-color: $bg-color-light;
+      }
+    }
+  }
+
+  &-popper {
+    &[x-placement^='top'] {
+      .tippy-tooltip {
+        &.dark-theme {
+          .tippy-arrow {
+            filter: drop-shadow(var(--shadow-standard));
+            border-top-color: $bg-color-dark;
+          }
+        }
+
+        &.light-theme {
+          .tippy-arrow {
+            filter: drop-shadow(var(--shadow-standard));
+            border-top-color: $bg-color-light;
+          }
+        }
+      }
+    }
+
+    &[x-placement^='bottom'] {
+      .tippy-tooltip {
+        &.dark-theme {
+          .tippy-arrow {
+            filter: drop-shadow(var(--shadow-standard));
+            border-bottom-color: $bg-color-dark;
+          }
+        }
+
+        &.light-theme {
+          .tippy-arrow {
+            filter: drop-shadow(var(--shadow-standard));
+            border-bottom-color: $bg-color-light;
+          }
+        }
+      }
+    }
+  }
+}

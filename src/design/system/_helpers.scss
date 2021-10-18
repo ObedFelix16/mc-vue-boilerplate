@@ -1,0 +1,27 @@
+$colors: (
+  'primary',
+  'secondary',
+  'tertiary',
+  'quaternary',
+  'quinary',
+  'critical',
+  'caution',
+  'positive',
+  'neutral',
+  'info',
+  'promote'
+);
+
+$breakpoints: ('xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl');
+
+$breakpointsGrid: (
+  'xs': 376px,
+  'sm': 640px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1280px,
+  '2xl': 1536px,
+  '3xl': 2048px,
+);
+
+$contentWidthSizes: ('xsmall', 'small', 'medium', 'large');
